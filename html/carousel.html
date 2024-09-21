@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="1500" class="carousel-item active">
+                    <img class="d-block w-100" src="https://pixabay.com/get/gd23d27d74afeb695be74500a45f4807eb40ec597a6c0150d106def3bb241aa783113aa4fc7919be3454f1baeece4bb2f18c979f441d0d92ac36726b49d2273f3_1280.jpg">
+                    <div class="carousel caption">
+                        <h2>Foto de uma ponte</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="1500" class="carousel-item">
+                    <img class="d-block w-100" src="https://pixabay.com/get/ge978cdc81f9a24eb1627f3f971d85a31f356b1f167511d623366587eefd2677979300507617f21b5f33378fea08c30c7e62e328e13448af80f3e40dd7e944653_1280.jpg">
+                    <div class="carousel caption">
+                        <h2>Foto de um templo</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="1500" class="carousel-item">
+                    <img class="d-block w-100" src="https://pixabay.com/get/gabfb79c2ef1ad093fb1aae0992c95d8dedfb2729fe78a6055e783b1aad72b234e912aa6a1c7dfb41fab297ea86535b2f6b5ace41029986becebd7ec85cc3467a_1280.jpg">
+                    <div class="carousel caption">
+                        <h2>Foto de um pesqueiro</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-prev">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remover Comentários HTML</title>
+</head>
+<body>
+
+<!-- Este é um comentário HTML. -->
+<h1>Título da Página</h1>
+<p>Este é um parágrafo.</p>
+<!-- Outro comentário HTML -->
+<!-- <p>Este parágrafo está comentado.</p> -->
+
+<script>
+    // Função para remover comentários HTML
+    function removerComentarios() {
+        var elementos = document.body.getElementsByTagName("*"); // Obtém todos os elementos do corpo do documento
+        for (var i = 0; i < elementos.length; i++) { // Itera sobre todos os elementos
+            var elemento = elementos[i];
+            for (var j = 0; j < elemento.childNodes.length; j++) { // Itera sobre os nós filhos do elemento
+                var noFilho = elemento.childNodes[j];
+                if (noFilho.nodeType === Node.COMMENT_NODE) { // Verifica se o nó filho é um comentário
+                    elemento.removeChild(noFilho); // Remove o comentário
+                }
+            }
+        }
+    }
+
+    // Chama a função para remover comentários
+    removerComentarios();
+</script>
+
+</body>
+</html>

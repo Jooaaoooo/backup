@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mainJquery.css">
+<body>
+    <header>
+        <h1>Garleria de Fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="enderecoImagem" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="cancelar">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img src="./cube.jpg" alt="cube">
+            <div class="overlay-imagem-link">
+                <a href="./cube.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real 
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./cube2.jpg" alt="cube">
+            <div class="overlay-imagem-link">
+                <a href="./cube2.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real 
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./cube3.jpg" alt="cube">
+            <div class="overlay-imagem-link">
+                <a href="./cube3.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real 
+                </a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./mainJquery.js"></script>
+</body>
+</html>

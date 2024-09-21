@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header img {
+    max-height: 960px;
+}
+
+.navbar {
+    background-color: #ff0808;
+}
+
+.nav .nav-link-active {
+    background-color: #fff;
+    color: #ff0808;
+}
+
+#cabecalho .nav .nav-link, .navbar-brand, .navbar-brand:hover {
+    color: #fff;
+}
+
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+#sobre, #cardapio {
+    background-color: #ffeae6;
+}
+
+.text-colored {
+    color: #ff0808;
+}
+
+.nav-cardapio .nav-link.active, #contato button {
+    background-color: #ff0808;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #ff0808;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+

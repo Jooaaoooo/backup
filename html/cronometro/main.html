@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made by AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input {
+            width: 50%;
+            text-align: center;
+        }
+        button {
+            width: 30%;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: center;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result-box {
+            margin-top: 2px;
+            text-align: center;
+            display: flex-box;
+            justify-content: center;
+        }
+        .countdown-display {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .countdown-display span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Random Timer</h2>
+    <ul>
+        <li class="input-container">
+            <label for="minTime">Min time in seconds:</label>
+            <input type="number" id="minTime" min="1" value="60">
+        </li>
+        <li class="input-container">
+            <label for="maxTime">Max time in seconds:</label>
+            <input type="number" id="maxTime" min="1" value="300">
+        </li>
+        <li class="input-container">
+            <label for="timerCount">Timer count:</label>
+            <input type="number" id="timerCount" min="1" value="0">
+        </li>
+        <li><button id="startTimers">START</button></li>
+    </ul>
+
+    <h3 style="text-align: center;">Countdown Display</h3>
+    <div class="countdown-display">
+        <div>Time remaining <span id="timeRemaining">0</span> seconds</div>
+        <div>Timers remaining <span id="timersRemaining">0</span></div>
+    </div>
+
+    <h2 style="text-align: center;">Random numbers generator</h2>
+    <ul>
+        <li class="input-container">
+            <label for="maxNumber">Max number:</label>
+            <input type="number" id="maxNumber" min="10" value="200">
+        </li>
+        <li><button id="generateNumber">GENERATE</button></li>
+    </ul>
+    <div class="result-box">
+        <h4>Result:</h4>
+        <span id="randomResult">0</span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
